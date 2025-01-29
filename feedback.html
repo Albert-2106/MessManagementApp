@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback & Complaints</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mess Feedback & Complaints</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="attendance.html">Attendance</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Submit Your Feedback</h2>
+        <form id="feedback-form">
+            <label for="student-name">Your Name:</label>
+            <input type="text" id="student-name" required>
+
+            <label for="mess-select">Select Mess:</label>
+            <select id="mess-select">
+                <option value="Poorna">Poorna</option>
+                <option value="Saroja">Saroja</option>
+            </select>
+
+            <label for="message">Your Feedback/Complaint:</label>
+            <textarea id="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <h2>Feedback & Complaints</h2>
+        <ul id="feedback-list"></ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mess Management</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

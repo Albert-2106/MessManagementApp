@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mess Admin Panel</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="attendance.html">Attendance</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Attendance Records</h2>
+        <button onclick="downloadAttendance()">Download Attendance</button>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Mess</th>
+                <th>Date</th>
+            </tr>
+            <tbody id="attendance-table"></tbody>
+        </table>
+
+        <h2>Feedback Records</h2>
+        <button onclick="downloadFeedback()">Download Feedback</button>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Mess</th>
+                <th>Message</th>
+                <th>Timestamp</th>
+            </tr>
+            <tbody id="feedback-table"></tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mess Management</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
